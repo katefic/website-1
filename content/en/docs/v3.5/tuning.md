@@ -43,7 +43,7 @@ To avoid having a huge log etcd makes periodic snapshots. These snapshots provid
 
 ### Snapshot tuning
 
-Creating snapshots with the V2 backend can be expensive, so snapshots are only created after a given number of changes to etcd. By default, snapshots will be made after every 10,000 changes. If etcd's memory usage and disk usage are too high, try lowering the snapshot threshold by setting the following on the command line:
+Creating snapshots with the V2 backend can be expensive, so snapshots are only created after a given number of changes to etcd. By default, snapshots will be made after every 100,000 changes. If etcd's memory usage and disk usage are too high, try lowering the snapshot threshold by setting the following on the command line:
 
 ```sh
 # Command line arguments:
